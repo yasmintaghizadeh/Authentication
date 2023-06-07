@@ -8,10 +8,10 @@ import org.springframework.data.annotation.LastModifiedDate;
 import java.util.Date;
 @Data
 @MappedSuperclass
-public class AbsatractEntity {
+public class AbstractEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private Long id;
+    private String id;
 
     @Version
     private Integer version;
